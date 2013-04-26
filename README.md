@@ -39,11 +39,11 @@ You have to add the script files to your html head and something like the follow
 
 When the browser is valid, or the user clicked on skip, it will be saved to a permanent cookie (browser=true) for 2 years. So after that the browser check will never run again until the cookie is in the browser.
 
-You can check the existence of cookies on server side too, so when you get that cookie from the client, you can evaluate an alternative html template without browser check.
+You can check the existence of cookies on server side too, so when you get that cookie from the client, you can send an alternative html without browser check.
 
 **Alternate browser detector**
 
-You can use an alternative server pr client side tool for browser detection, the only thing you need is overriding the ***BrowserDetect*** global variable with the results of the browser identification. For example:
+You can use an alternative server or client side tool for browser detection, the only thing you need is overriding the ***BrowserDetect*** global variable with the results of the browser identification. For example:
 
 	{
 		browser: "Firefox",
