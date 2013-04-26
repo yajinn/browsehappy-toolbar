@@ -1,4 +1,6 @@
 var BrowseHappy = (function () {
+    if (!BrowserDetect)
+        throw new Error("The BrowserDetect library is not loaded!");
 
     var extend = function (destination, source) {
         for (var i = 1; i < arguments.length; ++i) {
@@ -213,7 +215,7 @@ var BrowseHappy = (function () {
             }
         },
         icons: {
-            baseLocation: "/browsehappy/images"
+            baseLocation: "/images"
         },
         messages: {
             cookie: '<h2 style="text-align: center; color: #ff5555;">' +

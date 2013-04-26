@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>loading ...</title>
+    <script src="vendor/browser-detect.js"></script>
+    <script src="browse-happy-toolbar.js"></script>
+</head>
+<body>
+<noscript>
+    <h2 style="text-align: center; color: #ff5555;">
+        Please enable javascript in your browser, this site does not work without that!
+    </h2>
+</noscript>
+<script>
+    new BrowseHappy({
+        appendTo: document.body,
+        icons: {
+            baseLocation: "images"
+        },
+        schema: {
+            cookie: true,
+            browser: {
+                Firefox: 4,
+                Chrome: 7,
+                Safari: 5,
+                Opera: 12,
+                Explorer: 10
+            }
+        },
+        mode: "toolbar",
+        done: function () {
+            window.alert("your browser is ok!");
+        }
+    });
+</script>
+</body>
+</html>
